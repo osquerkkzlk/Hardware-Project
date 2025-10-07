@@ -3,64 +3,30 @@
 <pre>
 <h1>�Vision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ��Vision V5.24.2.0
-Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: z osquer, z, LIC=X96CK-Z6HC3-PCSJ8-3S28Y-QX6RN-4MUAC
+IDE-Version: ��Vision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kkzlk osquer, nuaa, LIC=21E4T-RJVIP-CXKU6-DQ4E0-3ITFQ-YB50X
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.24.1
-Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 5 (build 528)
-Assembler:       Armasm.exe V5.06 update 5 (build 528)
-Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
-Library Manager: ArmAr.exe V5.06 update 5 (build 528)
-Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
-CPU DLL:         SARMCM3.DLL V5.24.1
-Dialog DLL:      DCM.DLL V1.16.0.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
-Dialog DLL:      TCM.DLL V1.32.0.0
+Toolchain:       MDK-ARM Plus  Version: 5.43.0.0
+Toolchain Path:  G:\Kevil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TCM.DLL V1.56.6.0
  
 <h2>Project:</h2>
-D:\stm32\STM32���Ž̳�����\����Դ��\STM32Project-��ע�Ͱ�\10-1 ����I2C��дMPU6050\Project.uvprojx
-Project File Date:  12/13/2022
+C:\Users\osquer\Desktop\Hardware-Project\STM32\Reference Document\F10xx\F103 C8T6\STM32Project-��ע�Ͱ�\10-1 ����I2C��дMPU6050\Project.uvprojx
+Project File Date:  10/06/2025
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'G:\Kevil\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling MPU6050.c...
-Hardware\MPU6050.c(15): warning:  #223-D: function "MyI2C_Start" declared implicitly
-  	MyI2C_Start();						//I2C起始
-Hardware\MPU6050.c(16): warning:  #223-D: function "MyI2C_SendByte" declared implicitly
-  	MyI2C_SendByte(MPU6050_ADDRESS);	//发送从机地址，读写位�?0，表示即将写�?
-Hardware\MPU6050.c(17): warning:  #223-D: function "MyI2C_ReceiveAck" declared implicitly
-  	MyI2C_ReceiveAck();					//接收应答
-Hardware\MPU6050.c(22): warning:  #223-D: function "MyI2C_Stop" declared implicitly
-  	MyI2C_Stop();						//I2C终止
-Hardware\MPU6050.c(34): warning:  #223-D: function "MyI2C_Start" declared implicitly
-  	MyI2C_Start();						//I2C起始
-Hardware\MPU6050.c(35): warning:  #223-D: function "MyI2C_SendByte" declared implicitly
-  	MyI2C_SendByte(MPU6050_ADDRESS);	//发送从机地址，读写位�?0，表示即将写�?
-Hardware\MPU6050.c(36): warning:  #223-D: function "MyI2C_ReceiveAck" declared implicitly
-  	MyI2C_ReceiveAck();					//接收应答
-Hardware\MPU6050.c(43): warning:  #223-D: function "MyI2C_ReceiveByte" declared implicitly
-  	Data = MyI2C_ReceiveByte();			//接收指定寄存器的数据
-Hardware\MPU6050.c(44): warning:  #223-D: function "MyI2C_SendAck" declared implicitly
-  	MyI2C_SendAck(1);					//发送应答，给从机非应答，终止从机的数据输出
-Hardware\MPU6050.c(45): warning:  #223-D: function "MyI2C_Stop" declared implicitly
-  	MyI2C_Stop();						//I2C终止
-Hardware\MPU6050.c(57): warning:  #223-D: function "MyI2C_Init" declared implicitly
-  	MyI2C_Init();									//先初始化底层的I2C
-Hardware\MPU6050.c: 11 warnings, 0 errors
-compiling main.c...
-User\main.c(11): warning:  #223-D: function "MyI2C_Init" declared implicitly
-  	MyI2C_Init();
-User\main.c(14): warning:  #223-D: function "MyI2C_Start" declared implicitly
-  	MyI2C_Start();
-User\main.c(15): warning:  #223-D: function "MyI2C_SendByte" declared implicitly
-  	MyI2C_SendByte(0xD0);
-User\main.c(16): warning:  #223-D: function "MyI2C_ReceiveAck" declared implicitly
-  	uint8_t ack_bit=MyI2C_ReceiveAck();
-User\main.c: 4 warnings, 0 errors
 linking...
 .\Objects\Project.axf: Error: L6218E: Undefined symbol MyI2C_Init (referred from mpu6050.o).
 .\Objects\Project.axf: Error: L6218E: Undefined symbol MyI2C_ReceiveAck (referred from mpu6050.o).
@@ -72,22 +38,21 @@ linking...
 Not enough information to list image symbols.
 Not enough information to list load addresses in the image map.
 Finished: 2 information, 0 warning and 7 error messages.
-".\Objects\Project.axf" - 7 Error(s), 15 Warning(s).
+".\Objects\Project.axf" - 7 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: Keil
                 http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
-                Keil.STM32F1xx_DFP.2.2.0
+                Keil::STM32F1xx_DFP@2.2.0
                 STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  .\RTE\_Target_1
-  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+  G:/Kevil/pack/Keil/STM32F1xx_DFP/2.2.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
 Target not created.
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>
